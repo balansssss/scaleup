@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pandora</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo_container">
+            <a href="./index.html">
+                <img class="header_logo" src="./assets/img/Pandora_Logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <div class="navigation_search">
+                <img class="navigation_search_icon" src="./assets/img/navigation/find.png" alt="Find">
+                <input class="navigation_search_input" type="text" autocomplete="none" placeholder="CERCA ...">
+            </div>
+            <div class="navigation_links">
+                <a href="#">
+                    <img class="navigation_links_icon location_icon" src="./assets/img/navigation/location.png"
+                        alt="Location" title="Location">
+                </a>
+                <a href="#">
+                    <img class="navigation_links_icon profile_icon" src="./assets/img/navigation/profile.png"
+                        alt="Profile" title="Profile">
+                </a>
+                <a href="#">
+                    <img class="navigation_links_icon cart_icon" src="./assets/img/navigation/cart.png" alt="Cart"
+                        title="Cart">
+                </a>
+            </div>
+        </nav>
+        <nav class="navigation_mobile">
+            <div class="navigation_links">
+                <a href="#">
+                    <img class="navigation_links_icon menu_icon" src="./assets/img/navigation/burger.png" alt="Menu"
+                        title="Menu">
+                </a>
+                <a href="#">
+                    <img class="navigation_links_icon profile_icon" src="./assets/img/navigation/profile.png"
+                        alt="Profile" title="Profile">
+                </a>
+            </div>
+            <div class="mobile_logo">
+                <a href="./index.html">
+                    <img class="header_logo" src="./assets/img/Pandora_Logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="navigation_links">
+                <a href="#">
+                    <img class="navigation_links_icon search_icon" src="./assets/img/navigation/find.png" alt="Search"
+                        title="Search">
+                </a>
+                <a href="#">
+                    <img class="navigation_links_icon cart_icon" src="./assets/img/navigation/cart.png" alt="Cart"
+                        title="Cart">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main class="card">
+            <section class="card_images">
+                <img class="card_images_item current" src="./assets/img/card/photo1.png" alt="Photo 1">
+                <img class="card_images_item" src="./assets/img/card/photo2.png" alt="Photo 2">
+                <img class="card_images_item" src="./assets/img/card/photo3.png" alt="Photo 3">
+                <img class="card_images_item" src="./assets/img/card/photo4.png" alt="Photo 4">
+                <div class="card_images_points">
+                    <div class="card_images_points_item current"></div>
+                    <div class="card_images_points_item"></div>
+                    <div class="card_images_points_item"></div>
+                    <div class="card_images_points_item"></div>
+                </div>
+                <button class="card_images_button prev" id="prevImage" onclick="changeImage('prev');">
+                    <img src="./assets/img/arrow_prev.png" alt="Prev">
+                </button>
+                <button class="card_images_button next" id="nextImage" onclick="changeImage('next');">
+                    <img src="./assets/img/arrow_next.png" alt="Next">
+                </button>
+            </section>
+            <article class="card_info">
+                <div class="card_info_category">
+                    NOVITÀ | RISPARMIA 57€
+                </div>
+                <h1 class="card_info_title">
+                    Set Bracciale Sogna in Grande
+                </h1>
+                <div class="card_info_prices">
+                    <span class="card_info_prices old_price">€ 236,00</span>
+                    <span class="card_info_prices sale_price">€ 179,00</span>
+                </div>
+                <div class="card_info_description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Integer malesuada nunc vel risus commodo viverra. Leo in vitae turpis massa sed
+                    elementum tempus egestas. Augue neque gravida in fermentum et sollicitudin ac. Aenean euismod
+                    elementum
+                    nisi quis eleifend quam adipiscing vitae proin. Massa massa ultricies mi quis hendrerit dolor magna
+                    eget
+                    est. Urna et pharetra pharetra massa massa ultricies mi.
+                </div>
+                <div class="card_quest">
+                    <p class="card_quest_title">Domanda <span id="curQuestion">1</span>/3:</p>
+                    <p class="card_quest_question">Avete mai usato un Set Bracciale Sogna in Grande?</p>
+                    <div class="card_quest_buttons">
+                        <button class="card_quest_button" onclick="answerQuest()">Sì</button>
+                        <button class="card_quest_button pink" onclick="answerQuest()">No</button>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+    <button class="feedback">Feedback</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
